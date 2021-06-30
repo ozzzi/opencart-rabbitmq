@@ -17,9 +17,15 @@ define('RABBITMQ_USER', 'login');
 define('RABBITMQ_PASS', 'password');
 ```
 
-Usage
+### Usage
+
+Producer
 
 ```php
 $this->load->library('queue');
 $this->queue->addTask('queueName', ['some' => 'data']);
 ```
+
+Worker
+
+`cli/worker.php`
