@@ -16,3 +16,10 @@ define('RABBITMQ_PORT', '5672');
 define('RABBITMQ_USER', 'login');
 define('RABBITMQ_PASS', 'password');
 ```
+
+Usage
+
+```php
+$this->load->library('queue');
+$this->queue->task('queueName', ['some' => 'data']);
+```
