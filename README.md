@@ -21,5 +21,5 @@ Usage
 
 ```php
 $this->load->library('queue');
-$this->queue->task('queueName', ['some' => 'data']);
+$this->queue->addTask('queueName', ['some' => 'data']);
 ```
